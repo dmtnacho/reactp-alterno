@@ -1,0 +1,42 @@
+.productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+
+    &__tarjeta {
+        display: grid;
+        grid-template-rows: auto auto 30px 50px;
+        align-items: center;
+        justify-items: center;
+        margin: 10px;
+
+        & h3 {
+            text-align: center;
+            margin: 5px;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+}
+
+.tarjeta {
+    &__boton {
+        font-family: Helvetica, Arial, sans-serif;
+        background-color: white;
+        padding: 0.3rem;
+        border-radius: 5px;
+        border-color: #634836;
+        border-style: solid;
+        border-width: 1px;
+        color: #634836;
+        text-align: center;
+        margin: 0.625rem;
+        margin-top: 0.625rem;
+
+        &:hover {
+            box-shadow: 0px 5px 5px rgba(75, 75, 75, 0.75);
+        }
+    }
+}

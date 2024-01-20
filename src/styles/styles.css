@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.textmarron {
+  color: #634836;
+}
+
+header {
+  background-color: #afd3ed;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__logo {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__cateYcarro {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  list-style: none;
+}
+
+.categorias__botones {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 5px;
+  border-color: #634836;
+  border-style: solid;
+  border-width: 1px;
+  color: #634836;
+  text-align: center;
+  margin: 0.625rem;
+  margin-top: 0.625rem;
+}
+.categorias__botones:hover {
+  box-shadow: 0px 5px 5px rgba(75, 75, 75, 0.75);
+}
+.categorias a {
+  text-decoration: none;
+}
+
+.carrito {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  border-color: #634836;
+  border-style: solid;
+  border-width: 1px;
+  color: #634836;
+  margin: 0.625rem;
+  margin-top: 0.625rem;
+}
+.carrito:hover {
+  box-shadow: 0px 5px 5px rgba(75, 75, 75, 0.75);
+}
+.carrito__logo {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.carrito__cantidadProds {
+  margin-right: 10px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.productos__tarjeta {
+  display: grid;
+  grid-template-rows: auto auto 30px 50px;
+  align-items: center;
+  justify-items: center;
+  margin: 10px;
+}
+.productos__tarjeta h3 {
+  text-align: center;
+  margin: 5px;
+}
+.productos__tarjeta p {
+  text-align: center;
+}
+
+.tarjeta__boton {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 5px;
+  border-color: #634836;
+  border-style: solid;
+  border-width: 1px;
+  color: #634836;
+  text-align: center;
+  margin: 0.625rem;
+  margin-top: 0.625rem;
+}
+.tarjeta__boton:hover {
+  box-shadow: 0px 5px 5px rgba(75, 75, 75, 0.75);
+}
+
+.detail {
+  display: grid;
+  grid-template-areas: "foto detalles" "cantidad boton";
+  grid-template-columns: 500px 1fr;
+  gap: 10px;
+  margin: 50px;
+}
+.detail__img {
+  grid-area: foto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail__detalles {
+  grid-area: detalles;
+}
+.detail__boton {
+  grid-area: boton;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.detail__cantidad {
+  grid-area: cantidad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail__terminar {
+  grid-area: boton;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

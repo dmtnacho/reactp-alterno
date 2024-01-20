@@ -1,0 +1,46 @@
+.detail {
+    display: grid;
+    grid-template-areas:
+        "foto detalles"
+        "cantidad boton";
+
+    grid-template-columns: 500px 1fr;
+    gap: 10px;
+    margin: 50px;
+
+    &__img {
+        grid-area: foto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__detalles {
+        grid-area: detalles;
+    }
+
+    &__boton {
+        grid-area: boton;
+        max-width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    &__cantidad{
+        grid-area: cantidad;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__terminar{
+        grid-area: boton;
+        max-width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}

@@ -1,0 +1,91 @@
+header {
+    background-color: #afd3ed;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header {
+
+    &__logo {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__cateYcarro {
+        display: flex;
+    }
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__botones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        list-style: none;
+    }
+
+
+}
+
+.categorias {
+
+    &__botones {
+        font-family: Helvetica, Arial, sans-serif;
+        text-decoration: none;
+        background-color: white;
+        padding: 0.3rem;
+        border-radius: 5px;
+        border-color: #634836;
+        border-style: solid;
+        border-width: 1px;
+        color: #634836;
+        text-align: center;
+        margin: 0.625rem;
+        margin-top: 0.625rem;
+
+        &:hover {
+            box-shadow: 0px 5px 5px rgba(75, 75, 75, 0.75);
+        }
+    }
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+.carrito {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    border-color: #634836;
+    border-style: solid;
+    border-width: 1px;
+    color: #634836;
+    margin: 0.625rem;
+    margin-top: 0.625rem;
+
+    &:hover {
+        box-shadow: 0px 5px 5px rgba(75, 75, 75, 0.75);
+    }
+
+    &__logo {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    &__cantidadProds {
+        margin-right: 10px;
+        
+    }
+}
