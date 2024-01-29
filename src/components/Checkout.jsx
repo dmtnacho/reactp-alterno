@@ -72,15 +72,15 @@ const Checkout = () => {
                 setOrderId(orderDocRef.id);
                 limpiarCarrito();
                 Swal.fire({
-                    title: '¡Compra realizada exitosamente!',
+                    title: '¡Purchase completed successfully!',
                     icon: 'success',
-                    confirmButtonText: 'Cerrar'
+                    confirmButtonText: 'Close'
                 });
             } else {
-                Swal.fire("Hay items sin stock")
+                Swal.fire("Out of stock items")
             }
         } catch (error) {
-            console.error("Error al procesar la orden:", error);
+            console.error("Error processing the order:", error);
         }
     };
 
