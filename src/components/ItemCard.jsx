@@ -12,10 +12,10 @@ const ItemCard = ({ item }) => {
         <article className="productos__tarjeta">
             <img src={item.img} alt={item.name} />
             <h3>{item.name}</h3>
-            <p>Precio: {moneyFormat.format(item.price)}</p>
+            <p>Price: {moneyFormat.format(item.price)}</p>
 
             <Boton>
-                <Link to={`/item/${item.id}`}>Detalles</Link>
+                <Link to={`/item/${item.id}`}>Details</Link>
             </Boton>
         </article>
     );

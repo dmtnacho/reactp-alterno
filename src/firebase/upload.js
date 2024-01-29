@@ -6,18 +6,18 @@ import { addDoc, collection, getFirestore } from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCzsjPlkih-wtHdv4-kwwBJknS85V9dGYU",
-  authDomain: "rj-ulisses.firebaseapp.com",
-  projectId: "rj-ulisses",
-  storageBucket: "rj-ulisses.appspot.com",
-  messagingSenderId: "125487940193",
-  appId: "1:125487940193:web:70cebd7de97c1a547ae020",
-  measurementId: "G-S5V0XKK814"
+  apiKey: "AIzaSyC659yUSO6u2ccuSqMIgGXWAULU3jJUoXI",
+  authDomain: "ignacio-reactcoder.firebaseapp.com",
+  projectId: "ignacio-reactcoder",
+  storageBucket: "ignacio-reactcoder.appspot.com",
+  messagingSenderId: "1074418397708",
+  appId: "1:1074418397708:web:679f05fd0c49b214ecf429",
+  measurementId: "G-WG58J6Y1J2"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app)
+export const db = getFirestore(app)
 
 console.log(productos_lista)
 

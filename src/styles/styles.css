@@ -18,6 +18,8 @@ body {
 }
 
 .textmarron {
+  display: flex;
+  justify-content: center;
   color: #634836;
 }
 

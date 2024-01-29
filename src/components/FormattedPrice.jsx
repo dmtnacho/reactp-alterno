@@ -1,13 +1,13 @@
 const FormattedPrice = ({ numero }) => {
 
-    let moneyFormat = new Intl.NumberFormat('es-AR', {
+    let moneyFormat = new Intl.NumberFormat('en-eu', {
         style: 'currency',
-        currency: 'ARS',
+        currency: 'EUR',
     });
 
     return (
         <span>
-            Precio: {moneyFormat.format(numero.price)}
+            Price: {moneyFormat.format(numero.price)}
         </span>
     );
 };

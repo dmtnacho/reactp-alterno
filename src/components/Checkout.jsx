@@ -87,10 +87,10 @@ const Checkout = () => {
     if (orderId) {
         return (
             <div className="container m-auto mt-10">
-                <h2 className="text-2xl font-semibold">¡Muchas gracias por tu compra!</h2>
+                <h2 className="text-2xl font-semibold">Thank you very much for your purchase!</h2>
                 <hr />
-                <p>Tu código de orden es: {orderId}</p>
-                <p>Podras recibir tu compra dentro de las 72hs hábiles en la dirección establecida.</p>
+                <p>Your order number is: {orderId}</p>
+                <p>You can receive your purchase within 72 business hours at the specified address.</p>
             </div>
         );
     }
@@ -100,7 +100,7 @@ const Checkout = () => {
             <h2 className="text-4xl font-semibold">Checkout</h2>
             <hr />
 
-            <h4>Ingresa tus datos:</h4>
+            <h4>Input your information:</h4>
             <form
                 onSubmit={handleSubmit}
                 className="flex flex-col gap-4 max-w-md mt-4"
@@ -108,7 +108,7 @@ const Checkout = () => {
                 <input
                     className="border p-2"
                     type="text"
-                    placeholder="Nombre y Apellido"
+                    placeholder="Full Name"
                     value={values.nombre}
                     onChange={handleInputChange}
                     name="nombre"
@@ -117,7 +117,7 @@ const Checkout = () => {
                 <input
                     className="border p-2"
                     type="text"
-                    placeholder="Número de contacto"
+                    placeholder="Phone number"
                     value={values.telefono}
                     onChange={handleInputChange}
                     name="telefono"
@@ -126,7 +126,7 @@ const Checkout = () => {
                 <input
                     className="border p-2"
                     type="text"
-                    placeholder="Dirección de envío"
+                    placeholder="Shipping address"
                     value={values.direccion}
                     onChange={handleInputChange}
                     name="direccion"
@@ -135,7 +135,7 @@ const Checkout = () => {
                 <input
                     className="border p-2"
                     type="email"
-                    placeholder="Correo electrónico"
+                    placeholder="Email"
                     value={values.email}
                     onChange={handleInputChange}
                     name="email"
@@ -144,14 +144,14 @@ const Checkout = () => {
                 <input
                     className="border p-2"
                     type="email"
-                    placeholder="Confirmar correo electrónico"
+                    placeholder="Confirm email"
                     value={values.confirmarEmail}
                     onChange={handleInputChange}
                     name="confirmarEmail"
                 />
 
                 <button type="submit" className="bg-blue-500 text-white py-2">
-                    Enviar
+                    Submit
                 </button>
             </form>
         </div>

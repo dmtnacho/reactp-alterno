@@ -25,7 +25,7 @@ const ItemDetail = ({ item }) => {
 
     return (
         <>
-            <Boton onClick={handleVolver}>Volver</Boton>
+            <Boton onClick={handleVolver}>Return</Boton>
             <div className="text-center detail">
                 <div className="detail__img">
                     <img
@@ -50,15 +50,15 @@ const ItemDetail = ({ item }) => {
                 {
                     estaEnCarrito(item.id)
                         ? <>
-                            <p>El producto ya se encuentra en el carrito</p>
+                            <p>The product is already in the cart.</p>
                             <Boton className="detail__terminar">
-                                <Link to="/cart">Terminar mi compra</Link>
+                                <Link to="/cart">Finish my purchase</Link>
                             </Boton>
                         </>
 
                         : <>
                             <QuantitySelector cantidad={cantidad} stock={item.stock} setCantidad={setCantidad} className="detail__cantidad" />
-                            <Boton className="detail__boton" onClick={handleAgregar} disabled={item.stock === 0}>Agregar al carrito</Boton>
+                            <Boton className="detail__boton" onClick={handleAgregar} disabled={item.stock === 0}>Add to cart</Boton>
                         </>
                 }
             </div>

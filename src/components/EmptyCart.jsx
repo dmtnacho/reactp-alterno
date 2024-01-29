@@ -6,12 +6,12 @@ const EmptyCart = () => {
     return (
         <>
             <Boton>
-                <Link to={"/"}>Volver</Link>
+                <Link to={"/"}>Return</Link>
             </Boton>
             <section className="container m-auto mt-8">
-                <h2 className="text-2xl font-semibold">El carrito se encuentra actualmente vacío</h2>
+                <h2 className="text-2xl font-semibold">The cart is currently empty.</h2>
                 <hr />
-                <p>Agrega algún producto en el carrito para realizar una compra</p>
+                <p>Add some products to the cart to make a purchase.</p>
             </section>
         </>
     )
